@@ -268,11 +268,11 @@ user-select: none;
   margin-top: 15px;
 }
 
-#icon1 i {
+#icon2 i {
   transition: transform 0.3s ease;
 }
 
-#icon1:hover i {
+#icon2:hover i {
   transform: rotate(50deg); 
 }
 

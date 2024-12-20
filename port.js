@@ -67,7 +67,7 @@ $(document).ready(function() {
         ar: "باستخدام: HTML، Bootstrap، Typescript، Angular."
       },
       image: "proj1.png",
-      icon1: "",
+      icon1: "https://github.com/GEHANALI/e-Commerce",
       icon2: "https://cartshop-eosin.vercel.app"
     },
     {
@@ -85,7 +85,7 @@ $(document).ready(function() {
         ar: "باستخدام: Bootstrap، JavaScript، واجهة برمجة التطبيقات."
       },
       image: "proj2.png",
-      icon1: "",
+      icon1: "https://github.com/gehanali/EXAM-YUMMY",
       icon2: "https://gehanali.github.io/EXAM-YUMMY/"
     },
     {
@@ -103,7 +103,7 @@ $(document).ready(function() {
         ar: "باستخدام: HTML، CSS، Bootstrap، Angular، واجهة برمجة تطبيقات الطقس."
       },
       image: "proj3.png",
-      icon1: "",
+      icon1: "https://github.com/Gege-alii/ng_WeatheApp",
       icon2: "https://ng-weather-app.vercel.app/"
     },
     {
@@ -121,7 +121,7 @@ $(document).ready(function() {
         ar: "باستخدام: HTML، CSS، Bootstrap، JavaScript."
       },
       image: "proj4.png",
-      icon1: "",
+      icon1: "https://github.com/Gege-alii/movie_app",
       icon2: "https://gege-alii.github.io/movie_app/"
     },
     {
@@ -139,7 +139,7 @@ $(document).ready(function() {
         ar: "باستخدام: HTML، CSS، Bootstrap، Angular."
       },
       image: "proj5.png",
-      icon1: "",
+      icon1: "https://github.com/Gege-alii/Products_shop",
       icon2: "https://products-shop-zmfj.vercel.app/home"
     },
     {
@@ -157,7 +157,7 @@ $(document).ready(function() {
         ar: "باستخدام: HTML، CSS، Bootstrap، PHP"
       },
       image: "proj6.png",
-      icon1: "",
+      icon1: "https://github.com/Gege-alii/phpcommerce/tree/master",
       icon2: "https://github.com/Gege-alii/phpcommerce/tree/master"
     },
     {
@@ -175,7 +175,7 @@ $(document).ready(function() {
         ar: "باستخدام: HTML، CSS، Bootstrap"
       },
       image: "proj7.png",
-      icon1: "",
+      icon1: "https://github.com/Gege-alii/Landing_page_2",
       icon2: "https://gege-alii.github.io/Landing_page_2/"
     },
     {
@@ -193,7 +193,7 @@ $(document).ready(function() {
         ar: "باستخدام: HTML، CSS، JavaScript"
       },
       image: "proj8.png",
-      icon1: "",
+      icon1: "https://github.com/Gege-alii/to_do_list",
       icon2: "https://gege-alii.github.io/to_do_list/"
     },
     {
@@ -211,7 +211,7 @@ $(document).ready(function() {
         ar: "باستخدام: HTML، CSS، Bootstrap، مكتبة AOS."
       },
       image: "proj9.png",
-      icon1: "",
+      icon1: "https://github.com/Gege-alii/bootstrap",
       icon2: "https://gege-alii.github.io/bootstrap/"
     },
     {
@@ -229,7 +229,7 @@ $(document).ready(function() {
         ar: "باستخدام: HTML، CSS، Bootstrap، JavaScript، jQuery"
       },
       image: "proj10.png",
-      icon1: "",
+      icon1: "https://github.com/Gege-alii/Jquery",
       icon2: "https://gege-alii.github.io/Jquery/"
     },
     {
@@ -247,7 +247,7 @@ $(document).ready(function() {
         "ar": "باستخدام: HTML، CSS، Bootstrap، JavaScript."
       },
       "image": "proj11.png",
-      "icon1": "",
+      "icon1": "https://github.com/Gege-alii/Age_calc",
       "icon2": "https://gege-alii.github.io/Age_calc/"
     },
     {
@@ -265,7 +265,7 @@ $(document).ready(function() {
         "ar": "باستخدام: HTML، CSS، Bootstrap، JavaScript."
       },
       "image": "proj12.png",
-      "icon1": "",
+      "icon1": "https://github.com/Gege-alii/dammy-Portfolio",
       "icon2": "https://gege-alii.github.io/dammy-Portfolio/"
     },
     {
@@ -283,7 +283,7 @@ $(document).ready(function() {
         "ar": "باستخدام: Bootstrap، JavaScript، JSON، LocalStorage."
       },
       "image": "proj13.png",
-      "icon1": "",
+      "icon1": "https://github.com/Gege-alii/loginJs",
       "icon2": "https://gege-alii.github.io/loginJs/"
     },
     {
@@ -301,7 +301,7 @@ $(document).ready(function() {
         "ar": "باستخدام: Bootstrap، TypeScript، Angular."
       },
       "image": "proj14.png",
-      "icon1": "",
+      "icon1": "https://github.com/Gege-alii/ng-avatar",
       "icon2": "https://ng-avatar.vercel.app/start"
     },
     {
@@ -319,7 +319,7 @@ $(document).ready(function() {
         "ar": "باستخدام: Bootstrap، JavaScript."
       },
       "image": "proj15.png",
-      "icon1": "",
+      "icon1": "https://github.com/Gege-alii/crudJs",
       "icon2": "https://gege-alii.github.io/crudJs/"
     },    
     {
@@ -337,9 +337,28 @@ $(document).ready(function() {
         "ar": "باستخدام: Bootstrap، PHP."
       },
       "image": "proj16.png",
-      "icon1": "",
+      "icon1": "https://github.com/Gege-alii/phpblog/tree/master",
       "icon2": "https://github.com/Gege-alii/phpblog/tree/master"
+    },
+    {
+      "number": "17",
+      "title": {
+        "en": "Image Slider",
+        "ar": "عارض الصور"
+      },
+      "description1": {
+        "en": "- This project is a simple responsive image slider. It includes automatic sliding, navigation buttons, pagination dots, and swipe functionality for touch screens.",
+        "ar": "- هذا المشروع عبارة عن عارض صور بسيط ومتجاوب. يتضمن انزلاق تلقائي، أزرار تنقل، نقاط ترقيم، ووظيفة السحب للشاشات التي تعمل باللمس."
+      },
+      "description2": {
+        "en": "Using: HTML, CSS, and JavaScript",
+        "ar": "باستخدام: HTML، CSS، JavaScript."
+      },
+      "image": "proj17.png",
+      "icon1": "https://github.com/Gege-alii/Image_Slider",
+      "icon2": "https://gege-alii.github.io/Image_Slider/"
     }
+    
       
   ];
   
