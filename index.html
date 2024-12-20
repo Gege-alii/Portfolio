@@ -8,285 +8,312 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-   
-
+ 
 
 </head>
 <body>
 
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand ms-5" href="#">
-                <img src="portt.png" width="100" height="40" alt="Logo" class="logo">
+      <div class="container-fluid">
+          <a class="navbar-brand ms-5" href="#">
+              <img src="portt.png" width="100" height="40" alt="Logo" class="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="#" data-en="Home" data-ar="الصفحة الرئيسية">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#section-2" data-en="About" data-ar="من أنا">About</a> 
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#section-3" data-en="Services" data-ar="الخدمات">Services</a> 
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#section-4" data-en="Projects" data-ar="المشاريع">Projects</a> 
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#footer" data-en="Contact" data-ar="التواصل">Contact</a> 
+                  </li>
+              </ul>
+          </div>
+          <div class="d-flex">
+              <button id="languageToggle" onclick="toggleLanguage()" class="btn" style=" margin-right: 30px;" >AR</button>            
+              <i id="theme-toggle" class="fas fa-moon" style="font-size: 24px; cursor: pointer; "></i>
+          </div>
+      </div>
+  </nav>
+  
+
+  <!-- Section 1 -->
+<section class="section-4 py-5" data-aos="fade-up" data-aos-duration="1000" id="section-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-12 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
+          <h1 class="text-md-start" data-ar="مرحبًا، أنا" data-en="Hello, I’m">Hello, I’m</h1>
+          <div class="intro-container mb-4 text-center text-md-start">
+            <span id="intro-text" data-ar="جيهان علي" data-en="Gehan Ali"></span>
+          </div>
+          <p class="section-description mb-4 text-center text-md-start" 
+             data-ar="مطور واجهات كامل الطموح مع أساس قوي في تقنيات تطوير الويب وشغف لإنشاء مواقع ويب ديناميكية سهلة الاستخدام."
+             data-en="Aspiring Full Stack Angular PHP Laravel Developer with a strong foundation in web development technologies and a passion for creating dynamic and user-friendly websites.">
+            Aspiring Full Stack Angular PHP Laravel Developer with a strong foundation in web development technologies and a passion for creating dynamic and user-friendly websites.
+          </p>
+          <div class="text-center text-md-start mb-4">
+            <hr class="section-line-4">
+          </div>
+          <div class="text-center text-md-start">
+            <a href="GehanAli.Cv.pdf" download="Genafer_Gad_CV" class="btn-download-container mt-4 px-4 py-2 btnn btn d-none" style="background-color: #183D3D; color: #FFFFFF;" 
+               data-ar="تنزيل السيرة الذاتية" data-en="Download CV">
+
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section-2">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section-3">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section-4">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#footer">Contact</a>
-                    </li>
+            <a href="GehanAli.Cv.pdf" download="Genafer_Gad_CV" class="btn-download-container mt-4 px-4 py-2 btnn btn" style="background-color: #183D3D; color: #FFFFFF;" 
+            data-ar="تنزيل السيرة الذاتية" data-en="Download CV">
+             Download CV
+         </a>
+          </div>
+          
+        </div>
+        <div class="col-lg-6 col-md-6 col-12 order-1 order-md-2 mb-4 text-center" data-aos="flip-left" data-aos-duration="1500">
+          <img src="me.jpeg" alt="Interior Design 4" class="img-fluid rectangle-image-4" style="max-width: 100%; height: auto;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- About Section -->
+  <section id="section-2">
+    <div class="container text-center my-5" data-aos="fade-up">
+      <h1 class="about-me-title" data-ar="عني" data-en="About Me">
+        About Me
+        <span class="background-word" data-ar="السيرة الذاتية" data-en="Resume">Resume</span>
+      </h1>
+    </div>
+    <div class="container my-5">
+      <div class="row align-items-center">
+        <div class="col-12 text-section" data-aos="zoom-in">
+          <h1 class="display-4 text-center text-md-start" data-ar="من أنا؟" data-en="Who Am I?">Who Am I?</h1>
+          <p class="text-center text-md-start" 
+             data-ar="أنا مطور واجهات كامل متحمس ذو خبرة في Angular و Laravel وتقنيات أخرى. أقوم بإنشاء تطبيقات ويب متجاوبة وسهلة الاستخدام وأستمتع بحل المشكلات الواقعية."
+             data-en="I'm a passionate full-stack developer with expertise in Angular, Laravel, and other technologies. I create responsive, user-friendly web applications and enjoy solving real-world problems.">
+            I'm a passionate full-stack developer with expertise in Angular, Laravel, and other technologies.
+            I create responsive, user-friendly web applications and enjoy solving real-world problems.
+          </p>
+          <hr>
+          <div class="personal-info">
+            <div class="info-item" data-aos="zoom-in">
+              <h4 data-ar="التعليم" data-en="Education"><i class="fas fa-graduation-cap"></i> Education</h4>
+              <p data-ar="بكالوريوس في نظم المعلومات الأثرية، جامعة القاهرة" 
+                 data-en="Bachelor's in Archaeological Information System, Cairo University">
+                Bachelor's in Archaeological Information System, Cairo University
+              </p>
+            </div>
+            <!-- Skills and Courses Section -->
+            <div class="skills-courses-row row" data-aos="zoom-in">
+              <!-- Skills Column -->
+              <div class="col-md-6 col-12 info-item mb-4 mb-md-0">
+                <h4 data-ar="المهارات" data-en="Skills"><i class="fas fa-tools"></i> Skills</h4>
+                <ul class="skills-list">
+                  <li data-ar="HTML، CSS، JavaScript، jQuery، Angular، Bootstrap" 
+                      data-en="HTML, CSS, JavaScript, jQuery, Angular, Bootstrap">
+                    HTML, CSS, JavaScript, jQuery, Angular, Bootstrap
+                  </li>
                 </ul>
+              </div>
+              <!-- Courses Column -->
+              <div class="col-md-6 col-12 info-item">
+                <h4 data-ar="الدورات" data-en="Courses"><i class="fas fa-book-open"></i> Courses</h4>
+                <ul class="courses-list">
+                  <li data-ar="دبلوم تطوير الويب الكامل - Route Academy" 
+                      data-en="Full Stack Development Diploma - Route Academy">
+                    Full Stack Development Diploma - Route Academy
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
-    </nav>
+      </div>
+    </div>
+  </section>
 
 
-
-
-      
-      
-      <!-- Section 1 -->
-
-      <section class="section-4 py-5" data-aos="fade-up" data-aos-duration="1000" id="section-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-12 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
-                    <h1 class="text-md-start">Hello, I’m</h1>
-                    <div class="intro-container mb-4 text-center text-md-start">
-                        <span id="intro-text"></span>
-                    </div>
-                    <p class="section-description mb-4 text-center text-md-start">
-                        Aspiring Full Stack Angular PHP Laravel Developer with a strong foundation in web development technologies and a passion for creating dynamic and user-friendly websites.
-                    </p>
-                    <div class="text-center text-md-start mb-4">
-                        <hr class="section-line-4">
-                    </div>
-                    <div class="text-center text-md-start">
-                        <a href="GehanAli.Cv.pdf" download="Genafer_Gad_CV" class="btn-download-container">
-                            <button class="btn mt-4 px-4 py-2" style="background-color: #183D3D; color: #FFFFFF;">
-                                Download CV
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-12 order-1 order-md-2 mb-4 text-center" data-aos="flip-left" data-aos-duration="1500">
-                    <img src="me.jpeg" alt="Interior Design 4" class="img-fluid rectangle-image-4" style="max-width: 100%; height: auto;">
-                </div>
+    <!--Services-->
+<section class="section-3 py-5 mb-5" id="section-3" data-aos="fade-up">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex align-items-center">
+            <hr class="hr-line flex-grow-2 me-5">
+            <h1 class="section-title-3" data-aos="fade-right" data-ar="الخدمات" data-en="Services">Services</h1>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row mt-5">
+        <!-- Website Design Service -->
+        <div class="col-md-4 mb-4 service">
+          <div class="row align-items-center">
+            <div class="col-12 d-flex align-items-center">
+              <p style="font-size: 35px;" data-ar="٠١" data-en="01">01</p>
             </div>
-        </div>
-    </section>
-    
-
-    
-    <!-- About -->
-    <section id="section-2">
-        <div class="container text-center my-5" data-aos="fade-up">
-            <h1 class="about-me-title">
-                About Me
-                <span class="background-word">Resume</span>
-            </h1>
-        </div>
-        <div class="container my-5">
-            <div class="row align-items-center">
-                <div class="col-12 text-section" data-aos="zoom-in">
-                    <h1 class="display-4 text-center text-md-start">Who Am I?</h1>
-                    <p class="text-center text-md-start">I'm a passionate full-stack developer with expertise in Angular, Laravel, and other technologies.
-                       I create responsive, user-friendly web applications and enjoy solving real-world problems.
-                       I’m excited to bring my skills to innovative projects and work collaboratively to deliver exceptional user experiences.</p>
-                    <hr>
-                    <div class="personal-info">
-                        <div class="info-item" data-aos="zoom-in">
-                            <h4><i class="fas fa-graduation-cap"></i> Education</h4>
-                            <p>Bachelor's in Archaeological Information System, Cairo University</p>
-                            <p>Bachelor of Archaeology [Cairo University at Faculty of Archaeology, Archaeological Information System department Ais] <br> Year: [Jul/2024]</p>
-                        </div>
-                        
-                        <!-- Skills and Courses Section -->
-                        <div class="skills-courses-row row" data-aos="zoom-in">
-                            <!-- Skills Column -->
-                            <div class="col-md-6 col-12 info-item mb-4 mb-md-0">
-                                <h4><i class="fas fa-tools"></i> Skills</h4>
-                                <ul class="skills-list">
-                                    <li>HTML, CSS, JavaScript, jQuery, Angular, Bootstrap</li>
-                                    <li>PHP, Laravel, MySQL</li>
-                                    <li>Microsoft Office</li>
-                                    <li>Communication Skills, Self-learner, Presentation Skills</li>
-                                </ul>
-                            </div>
-                            <!-- Courses Column -->
-                            <div class="col-md-6 col-12 info-item">
-                                <h4><i class="fas fa-book-open"></i> Courses</h4>
-                                <ul class="courses-list">
-                                    <li>Full Stack Development Diploma - Route Academy</li>
-                                    <li>English Course - MPA Academy</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="service-item d-flex align-items-start">
+            <i class="fa-solid fa-paint-brush service-icon"></i>
+            <div class="service-content ms-3">
+              <h3 class="mb-4" data-ar="تصميم المواقع" data-en="Website Design">Website Design</h3>
+              <p data-ar="تصميمات جذابة تركز على المستخدم لتعزيز وجود علامتك التجارية عبر الإنترنت." 
+                 data-en="Crafting visually appealing and user-centered designs to enhance your brand’s online presence.">
+                Crafting visually appealing and user-centered designs to enhance your brand’s online presence.
+              </p>
             </div>
+          </div>
+          <hr>
         </div>
-    </section>
-    
-
-      <!--Services-->
-      <section class="section-3 py-5 mb-5" id="section-3" data-aos="fade-up">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="d-flex align-items-center">
-                        <hr class="hr-line flex-grow-2 me-5">
-                        <h1 class="section-title-3" data-aos="fade-right">Services</h1>
-                    </div>
-                </div>
+  
+        <!-- Clean Code Service -->
+        <div class="col-md-4 mb-4 service">
+          <div class="row align-items-center">
+            <div class="col-12 d-flex align-items-center">
+              <p style="font-size: 35px;" data-ar="٠٢" data-en="02">02</p>
             </div>
-    
-            <div class="row mt-5">
-                <!-- Website Design Service -->
-                <div class="col-md-4 mb-4 service">
-                        <div class="row align-items-center">
-                            <div class="col-12 d-flex align-items-center">
-                              <p style="font-size: 35px;">01</p>
-                            </div>
-                          </div>
-                    <div class="service-item d-flex align-items-start">
-                        <i class="fa-solid fa-paint-brush service-icon"></i>
-                        <div class="service-content ms-3">
-                            <h3 class="mb-4">Website Design</h3>
-                            <p>Crafting visually appealing and user-centered designs to enhance your brand’s online presence.</p>
-                        </div>                       
-                    </div>
-                    <hr>
-                </div>
-                
-                <!-- Clean Code Service -->
-                <div class="col-md-4 mb-4 service">
-                    <div class="row align-items-center">
-                        <div class="col-12 d-flex align-items-center">
-                          <p style="font-size: 35px;">02</p>
-                        </div>
-                      </div>
-                    <div class="service-item d-flex align-items-start">
-                        <i class="fa-solid fa-code service-icon"></i>
-                        <div class="service-content ms-3">
-                            <h3 class="mb-4">Clean Code Development</h3>
-                            <p>Delivering high-quality, maintainable code that ensures performance and scalability.</p>
-                        </div>
-                    </div>
-                    <hr>
-                </div>
-                
-                <!-- Fast Typing Service -->
-                <div class="col-md-4 mb-4 service">
-                    <div class="row align-items-center">
-                        <div class="col-12 d-flex align-items-center">
-                          <p style="font-size: 35px;">03</p>
-                        </div>
-                      </div>
-                    <div class="service-item d-flex align-items-start">
-                        <i class="fa-solid fa-keyboard service-icon"></i>
-                        <div class="service-content ms-3">
-                            <h3 class="mb-4">Efficient Typing</h3>
-                            <p>Speed and accuracy in typing, optimizing workflows and reducing project timelines.</p>
-                        </div>
-                    </div>
-                    <hr>
-                </div>
-    
-                <!-- Responsive Design Service -->
-                <div class="col-md-4 mb-4 service">
-                    <div class="row align-items-center">
-                        <div class="col-12 d-flex align-items-center">
-                          <p style="font-size: 35px;">04</p>
-                        </div>
-                      </div>
-                    <div class="service-item d-flex align-items-start">
-                        <i class="fa-solid fa-mobile service-icon"></i>
-                        <div class="service-content ms-3">
-                            <h3 class="mb-4">Responsive Design</h3>
-                            <p>Creating responsive adaptable layouts for seamless experiences on devices of all sizes.</p>
-                        </div>
-                    </div>
-                    <hr>
-                </div>
-    
-                <!-- Team Collaboration Service -->
-                <div class="col-md-4 mb-4 service">
-                    <div class="row align-items-center">
-                        <div class="col-12 d-flex align-items-center">
-                          <p style="font-size: 35px;">05</p>
-                        </div>
-                      </div>
-                    <div class="service-item d-flex align-items-start">
-                        <i class="fa-solid fa-users service-icon"></i>
-                        <div class="service-content ms-3">
-                            <h3 class="mb-4">Team Collaboration</h3>
-                            <p>Effective communication and cooperation to ensure smooth project execution and teamwork.</p>
-                        </div>
-                    </div>
-                    <hr>
-                </div>
-    
-                <!-- SEO Optimization Service -->
-                <div class="col-md-4 mb-4 service">
-                    <div class="row align-items-center">
-                        <div class="col-12 d-flex align-items-center">
-                          <p style="font-size: 35px;">06</p>
-                        </div>
-                      </div>
-                    <div class="service-item d-flex align-items-start">
-                        <i class="fa-solid fa-search service-icon"></i>
-                        <div class="service-content ms-3">
-                            <h3 class="mb-4">SEO Optimization</h3>
-                            <p>Enhancing site visibility through optimized content and technical SEO practices.</p>
-                        </div>
-                    </div>
-                    <hr>
-                </div>
+          </div>
+          <div class="service-item d-flex align-items-start">
+            <i class="fa-solid fa-code service-icon"></i>
+            <div class="service-content ms-3">
+              <h3 class="mb-4" data-ar="تطوير الكودالنظيف" data-en="Clean Code Development">Clean Code Development</h3>
+              <p data-ar="تقديم كود عالية الجودة وقابلة للصيانة لضمان الأداء والقابلية للتوسع." 
+                 data-en="Delivering high-quality, maintainable code that ensures performance and scalability.">
+                Delivering high-quality, maintainable code that ensures performance and scalability.
+              </p>
             </div>
+          </div>
+          <hr>
         </div>
-    </section>
+  
+        <!-- Fast Typing Service -->
+        <div class="col-md-4 mb-4 service">
+          <div class="row align-items-center">
+            <div class="col-12 d-flex align-items-center">
+              <p style="font-size: 35px;" data-ar="٠٣" data-en="03">03</p>
+            </div>
+          </div>
+          <div class="service-item d-flex align-items-start">
+            <i class="fa-solid fa-keyboard service-icon"></i>
+            <div class="service-content ms-3">
+              <h3 class="mb-4" data-ar="الكتابة السريعة" data-en="Efficient Typing">Efficient Typing</h3>
+              <p data-ar="السرعة والدقة في الكتابة لتحسين تدفقات العمل وتقليل جداول المشاريع." 
+                 data-en="Speed and accuracy in typing, optimizing workflows and reducing project timelines.">
+                Speed and accuracy in typing, optimizing workflows and reducing project timelines.
+              </p>
+            </div>
+          </div>
+          <hr>
+        </div>
+  
+        <!-- Responsive Design Service -->
+        <div class="col-md-4 mb-4 service">
+          <div class="row align-items-center">
+            <div class="col-12 d-flex align-items-center">
+              <p style="font-size: 35px;" data-ar="٠٤" data-en="04">04</p>
+            </div>
+          </div>
+          <div class="service-item d-flex align-items-start">
+            <i class="fa-solid fa-mobile service-icon"></i>
+            <div class="service-content ms-3">
+              <h3 class="mb-4" data-ar="تصميم مستجيب" data-en="Responsive Design">Responsive Design</h3>
+              <p data-ar="إنشاء تصاميم متكيفة لتجارب سلسة على جميع الأحجام." 
+                 data-en="Creating responsive adaptable layouts for seamless experiences on devices of all sizes.">
+                Creating responsive adaptable layouts for seamless experiences on devices of all sizes.
+              </p>
+            </div>
+          </div>
+          <hr>
+        </div>
+  
+        <!-- Team Collaboration Service -->
+        <div class="col-md-4 mb-4 service">
+          <div class="row align-items-center">
+            <div class="col-12 d-flex align-items-center">
+              <p style="font-size: 35px;" data-ar="٠٥" data-en="05">05</p>
+            </div>
+          </div>
+          <div class="service-item d-flex align-items-start">
+            <i class="fa-solid fa-users service-icon"></i>
+            <div class="service-content ms-3">
+              <h3 class="mb-4" data-ar="تعاون الفريق" data-en="Team Collaboration">Team Collaboration</h3>
+              <p data-ar="تواصل وتعاون فعال لضمان تنفيذ سلس للمشاريع والعمل الجماعي." 
+                 data-en="Effective communication and cooperation to ensure smooth project execution and teamwork.">
+                Effective communication and cooperation to ensure smooth project execution and teamwork.
+              </p>
+            </div>
+          </div>
+          <hr>
+        </div>
+  
+        <!-- SEO Optimization Service -->
+        <div class="col-md-4 mb-4 service">
+          <div class="row align-items-center">
+            <div class="col-12 d-flex align-items-center">
+              <p style="font-size: 35px;" data-ar="٠٦" data-en="06">06</p>
+            </div>
+          </div>
+          <div class="service-item d-flex align-items-start">
+            <i class="fa-solid fa-search service-icon"></i>
+            <div class="service-content ms-3">
+              <h3 class="mb-4" data-ar="تحسين محركات البحث" data-en="SEO Optimization">SEO Optimization</h3>
+              <p data-ar="تعزيز ظهور الموقع من خلال المحتوى المحسن وممارسات تحسين محركات البحث الفنية." 
+                 data-en="Enhancing site visibility through optimized content and technical SEO practices.">
+                Enhancing site visibility through optimized content and technical SEO practices.
+              </p>
+            </div>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 
 
 <!-- projects -->
-
-    <section class="slider-section " id="section-4">
-        <div class="container text-center my-5" data-aos="fade-up">
-            <h1 class="about-me-title">
-                Projects
-                <span class="background-word2">MyWorks</span>
-            </h1>
-        </div>
-        <div class="project-info" id="projectInfo" data-aos="fade-left" >
-          <div class="project-info-content">
-            <div id="projectNumber" class="projectNumber">01</div>
-            <h1 id="projectTitle">Project Title</h1>
-            <p id="projectDescription1">Description line 1 for project</p>
-            <p id="projectDescription2" style="color: #1B4242; font-weight: bold;">Description line 2 for project</p>
+<section class="slider-section" id="section-4">
+    <div class="container text-center my-5" data-aos="fade-up">
+        <h1  class="about-me-title" data-ar="مشاريع" data-en="Projects">
+          Projects
+          <span class="background-word2" data-ar="أعمالي" data-en="MyWorks">MyWorks</span>
+        </h1>
+      </div>
+    <div class="project-info" id="projectInfo" data-aos="fade-left">
+        <div class="project-info-content">
+            <div id="projectNumber" class="projectNumber" data-ar="01" data-en="01">01</div>
+            <h1 id="projectTitle" data-ar="عنوان المشروع" data-en="Project Title">Project Title</h1>
+            <p id="projectDescription1" data-ar="وصف السطر 1 للمشروع" data-en="Description line 1 for project">Description line 1 for project</p>
+            <p id="projectDescription2" style="color: #1B4242; font-weight: bold;" data-ar="وصف السطر 2 للمشروع" data-en="Description line 2 for project">Description line 2 for project</p>
             <div><hr></div>
             <div class="icons">
-              <a href="#" id="icon1"><i class="fas fa-arrow-up"></i></a>
-              <a href="#" id="icon2" target="_blank"><i class="fab fa-github ms-5"></i></a>
+                <a href="#" id="icon1"><i class="fas fa-arrow-up"></i></a>
+                <a href="#" id="icon2" target="_blank" ><i class="fab fa-github ms-5" ></i></a>
             </div>
-          </div>
         </div>
+    </div>
 
-        <div class="project-image mb-5" id="projectImage" data-aos="zoom-in" >
-          <img src="https://via.placeholder.com/500" alt="Project Image">
-          <div class="slider-buttons">
-            <div class="btn" onclick="prevSlide()"><i class="fas fa-chevron-left"></i></div>
+    <div class="project-image mb-5" id="projectImage" data-aos="zoom-in">
+        <img src="https://via.placeholder.com/500" alt="Project Image" data-ar="صورة المشروع" data-en="Project Image">
+        <div class="slider-buttons">
+            <div class="btn" onclick="prevSlide()" ><i class="fas fa-chevron-left"></i></div>
             <div class="btn" onclick="nextSlide()"><i class="fas fa-chevron-right"></i></div>
-          </div>
         </div>
-      </section>
+    </div>
+</section>
+
         
 <!-- footer -->
-
 <section class="footer" id="footer" data-aos="fade-up">
     <div class="layer ">
         <div class="container">
@@ -297,7 +324,7 @@
                             <div class="row bg-light mt-5">
                                 <div class="col-md-6 mt-5" data-aos="zoom-in-up">
                                     <div class="title-box-2">
-                                        <h5 class="title-left mb-2 fs-3">Contact Me</h5>
+                                        <h5 class="title-left mb-2 fs-3" data-ar="للتواصل" data-en="Contact Me">Contact Me</h5>
                                         <div class="line p-1 mb-5"></div>
                                     </div>
                                     <div>
@@ -320,7 +347,7 @@
                                                 </div>
                                                 <div class="col-md-12 text-center my-3"></div>
                                                 <div class="col-md-12 text-center">
-                                                    <button type="submit" class="text-white rounded-pill ps-4 p-3 pe-4 border-0 mb-2" style="background-color: #183D3D; color: #FFFFFF;">Send Message</button>
+                                                    <button type="submit" class="text-white rounded-pill ps-4 p-3 pe-4 border-0 mb-2" style="background-color: #183D3D; color: #FFFFFF;" data-ar="إرسال رسالة" data-en="Send Message">Send Message</button>
                                                 </div>
                                             </div>
                                         </form>
@@ -328,11 +355,11 @@
                                 </div>
                                 <div class="col-md-6 mt-5 mb-5" data-aos="zoom-in-down">
                                     <div class="title-box-2 pt-4 pt-md-0">
-                                        <h5 class="title-left fs-3 mb-2">Get in Touch</h5>
+                                        <h5 class="title-left fs-3 mb-2" data-ar="تواصل معي" data-en="Get in Touch">Get in Touch</h5>
                                         <div class="line p-1 mb-5"></div>
                                     </div>
                                     <div class="more-info">
-                                        <p class="lead mb-3">Feel free to contact me for any work opportunities or collaborations; I'm always open to new projects</p>
+                                        <p class="lead mb-3" data-ar="لا تتردد في التواصل معي لأي فرص عمل أو تعاونات؛ أنا دائمًا منفتح على المشاريع الجديدة" data-en="Feel free to contact me for any work opportunities or collaborations; I'm always open to new projects">Feel free to contact me for any work opportunities or collaborations; I'm always open to new projects</p>
                                         <ul class="list-ico">
                                             <li><span><i class="fa-solid fa-location-dot pe-3 mb-3"></i></span> Cairo, Egypt</li>
                                             <li><span><i class="fa-solid fa-mobile-screen pe-3 mb-3"></i></span> 01017444607</li>
@@ -358,6 +385,7 @@
         </div>
     </div>
 </section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

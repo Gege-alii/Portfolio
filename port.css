@@ -1,5 +1,5 @@
-/* CSS Variables for easy theming */
-:root {
+ /* CSS Variables */
+ :root {
   --primary-color: #183D3D; 
   --secondary-color: #0d1610;
   --tertiary-color: #0e1512;
@@ -9,6 +9,18 @@
   --text-color: #FFFFFF; 
 }
 
+/* Dark Mode Variables */
+[data-theme="dark"] {
+  --primary-color: #181C14;
+  --secondary-color: #232321;
+  --tertiary-color: #697565;
+  --quaternary-color: #ECDFCC;
+  --accent-color: #697565; 
+  --background-gradient: linear-gradient(135deg, #3C3D37, #697565, #181C14);
+  --text-color:  #968585;
+}
+
+/* Body */
 body {
   background: var(--background-gradient);
   color: var(--text-color);
@@ -46,6 +58,12 @@ body {
 
 .logo{
   mix-blend-mode: multiply;
+}
+
+#languageToggle{
+  background-color: var( --primary-color);
+  color: var(--text-color);
+   border-color: var(--primary-color);
 }
 
 /* General Section Styling */
@@ -103,6 +121,41 @@ body {
 .section-line-4 {
   border-top: 1px solid var(--primary-color);
   margin: 0;
+}
+
+.about-me-title { 
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  display: inline-block;
+  text-align: center;
+  margin-top: 30px;  
+  z-index: 1; 
+}
+
+.background-word {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  font-size: 9rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  user-select: none;
+}
+
+.background-word2 {
+position: absolute;
+top: 40%;
+left: 50%;
+transform: translate(-50%, -50%) rotate(0deg);
+font-size: 8rem;
+font-weight: bold;
+color: rgba(0, 0, 0, 0.1);
+z-index: -1;
+user-select: none;
 }
 
 /* Hover effects */
@@ -284,6 +337,7 @@ body {
   background-color: var( --primary-color);
 }
 
+/* Media Query for responsiveness */
 @media (max-width: 768px) {
   .slider-section {
       flex-direction: column;
@@ -312,155 +366,58 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Skills and Courses Row */
-.skills-courses-row {
-  display: flex;
-  gap: 2rem;
-}
-
-.skills-courses-row .info-item {
-  flex: 1;
-}
-
-.skills-list, .courses-list {
-  padding-left: 20px;
-  list-style-type: disc;
-}
-
-.skills-list li, .courses-list li {
-  margin-bottom: 0.5rem;
-}
-
-/* Image Section */
-.image-section {
-  position: relative;
-}
-
-.image-wrapper {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.background-square {
+/* Dark/Light Mode Toggle */
+#theme-toggle {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 90%;
-  height: 90%;
-  background-color: var(--tertiary-color);
-  z-index: 0;
-  transition: all 0.4s ease;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--text-color);
 }
 
-.full-size-img {
-  width: 100%;
-  height: auto;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-  position: relative;
-  z-index: 1;
-  transition: transform 0.4s ease;
-}
-
-.image-wrapper:hover .full-size-img {
-  transform: scale(1.05) rotate(2deg);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .image-wrapper {
-      padding: 10px;
-  }
-
-  .full-size-img {
-      width: 90%;
-  }
-
-  .service-content h3 {
-      font-size: 22px;
-  }
-}
-
-/* footer */
-
-.layer{
+/* Footer */
+.layer {
   position: absolute;
-   top: 0; 
-   left: 0;
-    width: 100%;
-     height: 100%; 
-     background:#094145;
-     opacity: 0.7;
-  }
-  .footer{
-      background: url(overlay-bg.jpg); 
-      overflow: hidden;
-      width: 100%;
-      background-size: cover;
-      height:100vh ;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  background: #0941457b;
+}
 
-  }
+.footer{
+  background: url(overlay-bg.jpg); 
+  overflow: hidden;
+  width: 100%;
+  background-size: cover;
+  height:100vh ;
 
-  .line{
-    width: 80px;
-    background-color: var(--accent-color);
-  
+}
+
+.line{
+width: 80px;
+background-color: var(--accent-color);
+
 }
 .socials .ico-circle3{
-  gap: 100px;
+gap: 100px;
 }
 
- .ico-circle3 {
-  height: 50px;
-  width: 50px;
-  margin-right: 15px;
-  font-size: 20px;
-  border-radius: 50%;
-  color: #005B41;
-  box-shadow: 0 0 0 3px var(--primary-color);
+.ico-circle3 {
+height: 50px;
+width: 50px;
+margin-right: 15px;
+font-size: 20px;
+border-radius: 50%;
+color: #005B41;
+box-shadow: 0 0 0 3px var(--primary-color);
 }
-  .ico-circle3:hover{
-      box-shadow: 0 0 0 3px rgba(214, 214, 230, 0.6);
-      background-color: var(--accent-color); 
-      color: white;
-      transition:  all 0.5s;
-    }
-
-    .about-me-title {
-      position: relative;
-      font-size: 3rem;
-      font-weight: bold;
-      color: #333;
-      display: inline-block;
-      text-align: center;
-      margin-top: 30px;  
-      z-index: 1; 
-  }
-  
-  .background-word {
-      position: absolute;
-      top: 30%;
-      left: 50%;
-      transform: translate(-50%, -50%) rotate(0deg);
-      font-size: 9rem;
-      font-weight: bold;
-      color: rgba(0, 0, 0, 0.1);
-      z-index: -1;
-      user-select: none;
-  }
-
-  .background-word2 {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(0deg);
-    font-size: 8rem;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.1);
-    z-index: -1;
-    user-select: none;
+.ico-circle3:hover{
+  box-shadow: 0 0 0 3px rgba(214, 214, 230, 0.6);
+  background-color: var(--accent-color); 
+  color: white;
+  transition:  all 0.5s;
 }
 
 @media (max-width: 575.98px){
@@ -511,13 +468,3 @@ body {
   .personal-info {
       margin-top: 30px;
   }
-  
-
-
-
-
-
-
-
-
-  
