@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
  document.addEventListener("DOMContentLoaded", function () {
   new Typed("#intro-text", {
-    strings: ["Gehan Ali", "Full Stack Developer"],
+    strings: ["Gehan Ali", "Front-End Developer"],
     typeSpeed: 100,       
     backSpeed: 60,       
     loop: true,          
@@ -34,7 +34,7 @@ if (window.innerWidth > 768) {
 }
 // Button click event for CV download
 document.querySelector('.btnn').addEventListener('click', function() {
-  window.location.href = 'GehanAli.Cv.pdf';  
+  window.location.href = 'GehanAli..CV.pdf';  
 });
 
 
@@ -249,7 +249,98 @@ $(document).ready(function() {
       "image": "proj11.png",
       "icon1": "",
       "icon2": "https://gege-alii.github.io/Age_calc/"
-    }    
+    },
+    {
+      "number": "12",
+      "title": {
+        "en": "Dummy Portfolio Page",
+        "ar": "صفحة محفظة وهمية"
+      },
+      "description1": {
+        "en": "- This is a web-based dummy Portfolio page.",
+        "ar": "- هذه صفحة محفظة وهمية تعتمد على الويب."
+      },
+      "description2": {
+        "en": "Using: HTML, CSS, Bootstrap, JavaScript.",
+        "ar": "باستخدام: HTML، CSS، Bootstrap، JavaScript."
+      },
+      "image": "proj12.png",
+      "icon1": "",
+      "icon2": "https://gege-alii.github.io/dammy-Portfolio/"
+    },
+    {
+      "number": "13",
+      "title": {
+        "en": "JS System",
+        "ar": "نظام تسجيل الدخول"
+      },
+      "description1": {
+        "en": "- Log In and Sign Up System using JavaScript.",
+        "ar": "- نظام تسجيل الدخول والتسجيل باستخدام JavaScript."
+      },
+      "description2": {
+        "en": "Using: Bootstrap, JavaScript, JSON, LocalStorage.",
+        "ar": "باستخدام: Bootstrap، JavaScript، JSON، LocalStorage."
+      },
+      "image": "proj13.png",
+      "icon1": "",
+      "icon2": "https://gege-alii.github.io/loginJs/"
+    },
+    {
+      "number": "14",
+      "title": {
+        "en": "Avatar NG",
+        "ar": "مشروع صور الرموز"
+      },
+      "description1": {
+        "en": "- Avatar Pictures Project.",
+        "ar": "- مشروع صور الرموز الشخصية."
+      },
+      "description2": {
+        "en": "Using: Bootstrap, TypeScript, Angular.",
+        "ar": "باستخدام: Bootstrap، TypeScript، Angular."
+      },
+      "image": "proj14.png",
+      "icon1": "",
+      "icon2": "https://ng-avatar.vercel.app/start"
+    },
+    {
+      "number": "15",
+      "title": {
+        "en": "CRUD App",
+        "ar": "تطبيق CRUD"
+      },
+      "description1": {
+        "en": "- CRUD application using plain JavaScript without any framework.",
+        "ar": "- تطبيق CRUD باستخدام JavaScript فقط دون أي إطار عمل."
+      },
+      "description2": {
+        "en": "Using: Bootstrap, JavaScript.",
+        "ar": "باستخدام: Bootstrap، JavaScript."
+      },
+      "image": "proj15.png",
+      "icon1": "",
+      "icon2": "https://gege-alii.github.io/crudJs/"
+    },    
+    {
+      "number": "16",
+      "title": {
+        "en": "Blog Post App",
+        "ar": "تطبيق مدونة"
+      },
+      "description1": {
+        "en": "- This PHP native project is a fully functional blog platform that enables users to view posts and images. Registered users can perform CRUD operations on the posts. The application ensures secure user authentication, allowing only logged-in users to manage the content.",
+        "ar": "- هذا المشروع المكتوب بلغة PHP هو منصة مدونات متكاملة تتيح للمستخدمين عرض المنشورات والصور. يمكن للمستخدمين المسجلين إجراء عمليات CRUD على المنشورات. يضمن التطبيق مصادقة آمنة للمستخدمين، مما يسمح فقط للمستخدمين المسجلين بإدارة المحتوى."
+      },
+      "description2": {
+        "en": "Using: Bootstrap, PHP.",
+        "ar": "باستخدام: Bootstrap، PHP."
+      },
+      "image": "proj16.png",
+      "icon1": "",
+      "icon2": "https://github.com/Gege-alii/phpblog/tree/master"
+    }
+      
   ];
   
 

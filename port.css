@@ -7,6 +7,7 @@
   --accent-color: #005B41; 
   --background-gradient: linear-gradient(135deg, #040d1277, #337c7c74, #5C8374, #435B66, #005B41); 
   --text-color: #FFFFFF; 
+  --footer:#20484ba1;
 }
 
 /* Dark Mode Variables */
@@ -18,6 +19,8 @@
   --accent-color: #697565; 
   --background-gradient: linear-gradient(135deg, #3C3D37, #697565, #181C14);
   --text-color:  #968585;
+  --footer:#67695dae;
+
 }
 
 /* Body */
@@ -383,7 +386,7 @@ user-select: none;
   left: 0;
   width: 100%;
   height: 100%; 
-  background: #0941457b;
+  background: var(--footer);
 }
 
 .footer{
